@@ -1,10 +1,16 @@
 services:
   app:
+    image: ghcr.io/bremnes-data-consulting-production/bredc-deskcommcrm:english-ui
+    pull_policy: always
     networks:
       internal:
       npm_proxy:
         aliases:
           - deskcommcrm-app
+
+  worker:
+    image: ghcr.io/bremnes-data-consulting-production/bredc-deskcomm-worker:english-ui
+    pull_policy: always
 
   caddy:
     profiles:
