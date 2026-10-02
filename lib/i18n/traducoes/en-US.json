@@ -19,7 +19,6 @@
   "Ver tudo em Análise": "View all Analytics",
   "Configurações": "Settings",
   "Recolher": "Collapse",
-
   "Buscar...": "Search...",
   "Busca": "Search",
   "Não lidos": "Unread",
@@ -33,7 +32,6 @@
   "Quando chegarem mensagens, elas aparecem aqui em tempo real.": "When messages arrive, they will appear here in real time.",
   "Selecione uma conversa": "Select a conversation",
   "Selecione uma conversa para ver detalhes do contato.": "Select a conversation to view contact details.",
-
   "Por onde seu negócio fala com o cliente. Conecte números por QR ou o número oficial da Meta, e acompanhe a saúde de cada um.": "Where your business talks to customers. Connect numbers by QR code or Meta's official API and monitor the health of each one.",
   "Números por QR": "QR numbers",
   "API Oficial (Meta)": "Official API (Meta)",
@@ -57,7 +55,6 @@
   "Configurar acesso da IA": "Configure AI access",
   "Reconectar": "Reconnect",
   "Proteção de envio": "Sending protection",
-
   "Acesso da IA no WhatsApp": "WhatsApp AI access",
   "Teste com pessoas de confiança antes de liberar o atendimento automático.": "Test with trusted people before enabling automatic customer service.",
   "Somente os números desta lista podem receber respostas automáticas neste canal.": "Only numbers in this list can receive automatic replies on this channel.",
@@ -68,7 +65,6 @@
   "Salvar lista de teste": "Save test list",
   "Liberar atendimento ao público": "Enable public AI replies",
   "Cancelar": "Cancel",
-
   "Entrar": "Sign in",
   "Email": "Email",
   "Senha": "Password",
@@ -76,5 +72,26 @@
   "Entrar com Google": "Sign in with Google",
   "Esqueci minha senha": "Forgot my password",
   "Não tem conta?": "Don't have an account?",
-  "Criar conta": "Create account"
+  "Criar conta": "Create account",
+  "Atendimento": "Customer service",
+  "CRM": "CRM",
+  "Agente de IA": "AI Agent",
+  "Canais": "Channels",
+  "Análise": "Analytics",
+  "Organização": "Organization",
+  "Salvar": "Save",
+  "Continuar": "Continue",
+  "Voltar": "Back",
+  "Fechar": "Close",
+  "Editar": "Edit",
+  "Excluir": "Delete",
+  "Remover": "Remove",
+  "Adicionar": "Add",
+  "Criar": "Create",
+  "Atualizar": "Update",
+  "Confirmar": "Confirm",
+  "Copiar": "Copy",
+  "Carregando…": "Loading…",
+  "Salvando…": "Saving…",
+  "Nenhum resultado.": "No results."
 }
