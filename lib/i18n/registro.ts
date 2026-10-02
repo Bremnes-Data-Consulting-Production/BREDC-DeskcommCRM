@@ -74,6 +74,15 @@ export const REGISTRO_DE_IDIOMAS = [
     mantenedor: "mantenedores do projeto",
   },
   {
+    codigo: "en-US",
+    nomeNativo: "English (US)",
+    rotuloCurto: "EN",
+    tagBcp47: "en-US",
+    subtagsDoNavegador: ["en"],
+    nivel: "em_construcao",
+    mantenedor: "BREDC - Bremnes Data & Consulting",
+  },
+  {
     codigo: "zh-CN",
     nomeNativo: "简体中文",
     rotuloCurto: "中",

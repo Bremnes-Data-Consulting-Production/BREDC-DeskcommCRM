@@ -32,9 +32,12 @@
  * do que estava.
  */
 import type { Idioma } from "./idiomas";
+import type { IdiomaDoRegistro } from "./registro";
+import ingles from "./traducoes/en-US.json";
 
 /** `pt-BR` não aparece: é a chave. Só o que DIFERE precisa de linha. */
-type Traducoes = Record<string, Partial<Record<Exclude<Idioma, "pt-BR">, string>>>;
+type CodigoTraduzivel = Exclude<IdiomaDoRegistro["codigo"], "pt-BR">;
+type Traducoes = Record<string, Partial<Record<CodigoTraduzivel, string>>>;
 
 export const DICIONARIO: Traducoes = {
   // ─── EMPRESAS, PESSOAS E IMPORTAÇÃO (metade B2B do #1621, de @renatofortal) ───
@@ -13708,6 +13711,20 @@ export const DICIONARIO: Traducoes = {
   "Ajustar": { es: "Ajustar" },
   "Tudo o que se liga e desliga, se está ligado e onde se ajusta.": { es: "Todo lo que se activa y desactiva, si está activado y dónde se ajusta." },
 };
+
+/**
+ * Catálogos externos em construção.
+ *
+ * Idiomas com nível `em_construcao` podem ter tradução preparada aqui sem
+ * aparecer na interface. Quando o idioma for promovido no registro, estas
+ * entradas já passam a ser utilizadas pelo mesmo resolver.
+ */
+for (const [texto, traducao] of Object.entries(ingles)) {
+  DICIONARIO[texto] = {
+    ...DICIONARIO[texto],
+    "en-US": traducao,
+  };
+}
 
 /**
  * Traduz, ou devolve o próprio texto.
