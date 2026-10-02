@@ -31,6 +31,7 @@ const FUSOS: { id: string; cidade: string }[] = [
   { id: "America/Argentina/Buenos_Aires", cidade: "Buenos Aires" },
   { id: "Europe/Lisbon", cidade: "Lisboa" },
   { id: "Europe/Madrid", cidade: "Madri" },
+  { id: "Europe/Oslo", cidade: "Oslo, Norway" },
   { id: "America/New_York", cidade: "Nova York" },
   { id: "America/Los_Angeles", cidade: "Los Angeles" },
   { id: "UTC", cidade: "Outro (horário universal)" },

@@ -66,7 +66,7 @@ export function TestarClient({ nome, agenteId, versaoId }: Props) {
       // era outra: a versão não tinha credencial. Mentir sobre a causa manda a
       // pessoa procurar no lugar errado.
       const d = json.data;
-      if (d?.status && d.status !== "completed") {
+      if (d?.status && !["completed", "ok"].includes(d.status)) {
         setDesfecho({
           tipo: "erro",
           mensagem: d.error_message ?? d.error_code ?? `${t("o ensaio terminou como")} "${d.status}"`,

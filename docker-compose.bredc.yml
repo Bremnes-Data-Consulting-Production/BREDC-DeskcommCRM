@@ -1,0 +1,16 @@
+services:
+  app:
+    networks:
+      internal:
+      npm_proxy:
+        aliases:
+          - deskcommcrm-app
+
+  caddy:
+    profiles:
+      - caddy-disabled-bredc
+
+networks:
+  npm_proxy:
+    external: true
+    name: n8n-stack_proxy
